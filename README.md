@@ -29,8 +29,8 @@ IBMers can access the demo script and additional collateral from [here](https://
 Clone the demo repository:
 
 ```bash
-git clone https://github.com/ibm-cloud/ModernizeDemo
-cd ModernizeDemo
+git clone https://github.com/ibm-cloud/jpetstore-kubernetes
+cd jpetstore-kubernetes
 ```
 #### Code Structure
 
@@ -46,7 +46,7 @@ cd ModernizeDemo
 1. Create a file with the name **mms-secrets.json** by using the existing template:
 
    ```bash
-   # from ModernizeDemo directory
+   # from jpetstore-kubernetes directory
    cd mmssearch
    cp mms-secrets.json.template mms-secrets.json
    ```
@@ -191,7 +191,7 @@ If you did not deploy using Helm, you can deploy using the yaml files and kubect
 
 You are now ready to use the UI to shop for a pet or query the store by sending it a picture of what you're looking at:
 
-1. Access the java jpetstore application web UI for JPetstore at `http://jpetstore.<Ingress Subdomain>/`
+1. Access the java jpetstore application web UI for JPetstore at `http://jpetstore.<Ingress Subdomain>/shop/index.do`
 
    ![](readme_images/petstore.png)
 
